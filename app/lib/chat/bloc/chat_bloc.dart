@@ -1,9 +1,9 @@
 import 'dart:async';
 
 import 'package:app/chat/bloc/chat_bloc.dart';
-import 'package:app/chat/model/message.dart';
 import 'package:app/connection/connection.dart';
 import 'package:hydrated_bloc/hydrated_bloc.dart';
+import 'package:objects/objects.dart';
 import 'package:uuid/uuid.dart';
 
 export 'package:app/chat/bloc/chat_event.dart';

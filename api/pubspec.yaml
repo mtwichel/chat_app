@@ -11,14 +11,11 @@ dependencies:
   collection: ^1.19.1
   dart_frog: ^1.1.0
   dart_frog_web_socket: ^1.0.2
-  freezed_annotation: ^3.1.0
   hydrated_bloc: ^9.1.5
-  json_annotation: ^4.9.0
+  objects:
+    path: packages/objects
 
 dev_dependencies:
-  build_runner: ^2.8.0
   dart_frog_lint: ^0.1.0
-  freezed: ^3.2.3
-  json_serializable: ^6.11.1
   mocktail: ^1.0.3
   test: ^1.25.5

@@ -1,6 +1,6 @@
 name: app
 description: "A new Flutter project."
-publish_to: 'none'
+publish_to: "none"
 version: 0.1.0
 
 environment:
@@ -16,6 +16,8 @@ dependencies:
   hydrated_bloc: ^10.1.1
   freezed_annotation: ^3.1.0
   json_annotation: ^4.9.0
+  objects:
+    path: ../api/packages/objects
   shadcn_flutter: ^0.0.39
   uuid: ^4.5.1
   rxdart: ^0.28.0
