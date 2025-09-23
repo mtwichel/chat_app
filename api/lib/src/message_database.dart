@@ -1,5 +1,5 @@
-import 'package:api/api.dart';
 import 'package:collection/collection.dart';
+import 'package:objects/objects.dart';
 
 final _storage = <String, List<Message>>{};
 

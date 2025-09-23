@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:app/chat/model/model.dart';
+import 'package:objects/objects.dart';
 import 'package:web_socket_client/web_socket_client.dart';
 
 class Connection {

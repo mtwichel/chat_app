@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:api/api.dart';
 import 'package:dart_frog/dart_frog.dart';
 import 'package:dart_frog_web_socket/dart_frog_web_socket.dart';
+import 'package:objects/objects.dart';
 
 final Set<WebSocketChannel> channels = {};
 
