@@ -129,7 +129,8 @@
     "xlarge",
     "xxlg",
     "xxxlg",
-    "xxxs"
+    "xxxs",
+    "upcasted"
   ],
   "ignoreWords": [],
   "import": [],
