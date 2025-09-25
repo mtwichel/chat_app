@@ -33,6 +33,9 @@ dev_dependencies:
   build_runner: ^2.7.0
   freezed: ^3.2.3
   json_serializable: ^6.11.1
+  very_good_analysis: ^10.0.0
+  bloc_lint: ^0.3.2
+  bloc_tools: ^0.1.0-dev.19
 
 flutter:
   uses-material-design: true
