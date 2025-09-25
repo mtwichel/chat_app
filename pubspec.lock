@@ -525,7 +525,7 @@ packages:
   objects:
     dependency: "direct main"
     description:
-      path: "../api/packages/objects"
+      path: "api/packages/objects"
       relative: true
     source: path
     version: "0.1.0+1"

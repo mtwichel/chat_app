@@ -15,6 +15,7 @@ Future<Response> onRequest(
   final handler = webSocketHandler(
     (channel, protocol) {
       channels.add(channel);
+      // ignore: avoid_print
       print('New client connected');
       final messages = database.getMessages(
         conversationId: conversationId,
