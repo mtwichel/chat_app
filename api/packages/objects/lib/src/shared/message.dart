@@ -5,9 +5,15 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 part 'message.freezed.dart';
 part 'message.g.dart';
 
+/// The type of message.
 enum MessageType {
+  /// A text message.
   text,
+
+  /// A typing message.
   typing,
+
+  /// A stop typing message.
   stopTyping,
 }
 

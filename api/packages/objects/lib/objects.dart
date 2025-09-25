@@ -1,4 +1,5 @@
 /// Shared objects for the API
 library;
 
-export 'src/message.dart';
+export 'src/endpoints/endpoints.dart';
+export 'src/shared/shared.dart';
