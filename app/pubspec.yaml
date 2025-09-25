@@ -23,6 +23,8 @@ dependencies:
   recase: ^4.1.0
   sessions_repository:
     path: packages/sessions_repository
+  objects:
+    path: ../api/packages/objects
 
 dev_dependencies:
   flutter_test:

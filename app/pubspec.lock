@@ -523,7 +523,7 @@ packages:
     source: hosted
     version: "1.0.0"
   objects:
-    dependency: transitive
+    dependency: "direct main"
     description:
       path: "../api/packages/objects"
       relative: true
