@@ -2,6 +2,7 @@ name: api
 description: A new Dart Frog application
 version: 1.0.0+1
 publish_to: none
+resolution: workspace
 
 environment:
   sdk: ">=3.8.0 <4.0.0"
@@ -11,10 +12,14 @@ dependencies:
   collection: ^1.19.1
   dart_frog: ^1.1.0
   dart_frog_web_socket: ^1.0.2
-  hydrated_bloc: ^9.1.5
+  hydrated_bloc: ^10.1.1
   objects:
     path: packages/objects
   uuid: ^4.5.1
+
+dependency_overrides:
+  # TODO: remove when broadcast_bloc 0.1.0 is published.
+  bloc: ^9.0.0
 
 dev_dependencies:
   dart_frog_lint: ^0.1.0
