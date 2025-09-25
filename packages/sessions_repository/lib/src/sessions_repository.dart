@@ -34,4 +34,16 @@ class SessionsRepository {
       responseFromJson: CreateSessionResponse.fromJson,
     );
   }
+
+  /// Gets the sessions for the current user.
+  Future<List<GameSession>> getMySessions() async {
+    final response = await _client.get(
+      '/sessions',
+      queryParameters: {
+        'owner': 'me',
+      },
+      responseFromJson: GetSessionsResponse.fromJson,
+    );
+    return response.sessions;
+  }
 }
