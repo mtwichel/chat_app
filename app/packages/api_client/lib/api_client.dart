@@ -1,4 +1,4 @@
-/// An client for the Clubhaus API.
+/// An client for the a REST API.
 library;
 
 export 'package:web_socket_client/web_socket_client.dart' show Backoff;

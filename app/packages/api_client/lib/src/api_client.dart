@@ -8,7 +8,7 @@ import 'package:http/http.dart' as http;
 typedef FromJson<T> = T Function(Map<String, dynamic> json);
 
 /// {@template api_client}
-/// An client for the Clubhaus API.
+/// An client for the a REST API.
 /// {@endtemplate}
 class ApiClient {
   /// {@macro api_client}
