@@ -10,7 +10,7 @@ dependencies:
   api_client:
     path: ../api_client
   objects:
-    path: ../../../api/packages/objects
+    path: ../../api/packages/objects
 
 dev_dependencies:
   mocktail: ^1.0.4
