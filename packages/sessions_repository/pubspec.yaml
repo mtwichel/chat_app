@@ -2,6 +2,7 @@ name: sessions_repository
 description: A repository managing the sessions domain.
 version: 0.1.0+1
 publish_to: none
+resolution: workspace
 
 environment:
   sdk: ^3.9.0

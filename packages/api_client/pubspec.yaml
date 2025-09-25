@@ -2,6 +2,7 @@ name: api_client
 description: An client for a REST API.
 version: 0.1.0+1
 publish_to: none
+resolution: workspace
 
 environment:
   sdk: ^3.9.0

@@ -5,7 +5,7 @@ import 'package:hydrated_bloc/hydrated_bloc.dart';
 
 Future<void> init(InternetAddress ip, int port) async {
   HydratedBloc.storage = await HydratedStorage.build(
-    storageDirectory: Directory('./storage'),
+    storageDirectory: const HydratedStorageDirectory('./storage'),
   );
 }
 
