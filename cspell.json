@@ -45,6 +45,7 @@
     "codesigning",
     "Contador",
     "courseapp",
+    "Daggerheart",
     "dblite",
     "defghijklmnopqrst",
     "desaturate",
@@ -116,6 +117,7 @@
     "timebox",
     "tlsv1",
     "TOTP",
+    "upcasted",
     "vonage",
     "WEBP",
     "widgetbook",
@@ -129,8 +131,7 @@
     "xlarge",
     "xxlg",
     "xxxlg",
-    "xxxs",
-    "upcasted"
+    "xxxs"
   ],
   "ignoreWords": [],
   "import": [],
