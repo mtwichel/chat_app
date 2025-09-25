@@ -1,1 +1,12 @@
-include: package:flutter_lints/flutter.yaml
+include:
+  - package:very_good_analysis/analysis_options.yaml
+  - package:bloc_lint/recommended.yaml
+
+linter:
+  rules:
+    public_member_api_docs: ignore
+
+bloc:
+  rules:
+    avoid_public_bloc_methods: true
+    prefer_bloc: true

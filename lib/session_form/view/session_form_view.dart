@@ -9,24 +9,24 @@ class SessionFormView extends StatelessWidget {
   Widget build(BuildContext context) {
     final state = context.watch<SessionFormBloc>().state;
     return Scaffold(
-      headers: [AppBar(title: const Text('Session Form'))],
+      headers: const [AppBar(title: Text('Session Form'))],
       child: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
           spacing: 8,
           children: [
-            FormField(
-              key: FormKey('title'),
+            FormField<String>(
+              key: const FormKey('title'),
               label: const Text('Title'),
               child: TextField(
-                features: [InputFeature.clear()],
+                features: const [InputFeature.clear()],
                 onChanged: (value) {
                   context.read<SessionFormBloc>().add(TitleUpdated(value));
                 },
               ),
             ),
-            FormField(
-              key: FormKey('description'),
+            FormField<String>(
+              key: const FormKey('description'),
               label: const Text('Description'),
 
               child: TextArea(
@@ -45,8 +45,8 @@ class SessionFormView extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      FormField(
-                        key: FormKey('date'),
+                      FormField<DateTime>(
+                        key: const FormKey('date'),
                         label: const Text('Date'),
 
                         child: DatePicker(
@@ -62,7 +62,7 @@ class SessionFormView extends StatelessWidget {
                       TextButton(
                         onPressed: () {
                           context.read<SessionFormBloc>().add(
-                            DateUpdated(null),
+                            const DateUpdated(null),
                           );
                         },
                         child: const Text('Clear'),
@@ -74,8 +74,8 @@ class SessionFormView extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      FormField(
-                        key: FormKey('time'),
+                      FormField<TimeOfDay>(
+                        key: const FormKey('time'),
                         label: const Text('Time'),
                         child: TimePicker(
                           value: state.time,
@@ -91,7 +91,7 @@ class SessionFormView extends StatelessWidget {
                       TextButton(
                         onPressed: () {
                           context.read<SessionFormBloc>().add(
-                            TimeUpdated(null),
+                            const TimeUpdated(null),
                           );
                         },
                         child: const Text('Clear'),
@@ -101,14 +101,14 @@ class SessionFormView extends StatelessWidget {
                 ),
               ],
             ),
-            FormField(
-              key: FormKey('gameSystem'),
+            FormField<String>(
+              key: const FormKey('gameSystem'),
               label: const Text('Game System'),
 
               child: AutoComplete(
                 suggestions: state.gameSystemSuggestions,
                 child: TextField(
-                  features: [InputFeature.clear()],
+                  features: const [InputFeature.clear()],
                   onChanged: (value) {
                     context.read<SessionFormBloc>().add(
                       GameSystemUpdated(value),
@@ -117,8 +117,8 @@ class SessionFormView extends StatelessWidget {
                 ),
               ),
             ),
-            FormField(
-              key: FormKey('locationType'),
+            FormField<LocationType>(
+              key: const FormKey('locationType'),
               label: const Text('Location Type'),
 
               child: Select<LocationType>(
@@ -127,17 +127,17 @@ class SessionFormView extends StatelessWidget {
                   LocationType.physical => 'Physical',
                 }),
                 placeholder: const Text('TBD'),
-                popup: (context) => SelectPopup(
+                popup: (context) => const SelectPopup<LocationType>(
                   items: SelectItemList(
                     children: [
-                      SelectItemButton(value: null, child: const Text('TBD')),
+                      SelectItemButton(value: null, child: Text('TBD')),
                       SelectItemButton(
                         value: LocationType.online,
-                        child: const Text('Online'),
+                        child: Text('Online'),
                       ),
                       SelectItemButton(
                         value: LocationType.physical,
-                        child: const Text('Physical'),
+                        child: Text('Physical'),
                       ),
                     ],
                   ),
@@ -151,11 +151,11 @@ class SessionFormView extends StatelessWidget {
               ),
             ),
             if (state.locationType == LocationType.physical)
-              FormField(
-                key: FormKey('address'),
+              FormField<String>(
+                key: const FormKey('address'),
                 label: const Text('Address'),
                 child: TextField(
-                  features: [InputFeature.clear()],
+                  features: const [InputFeature.clear()],
                   initialValue: state.location,
                   onChanged: (value) {
                     context.read<SessionFormBloc>().add(LocationUpdated(value));
@@ -163,11 +163,11 @@ class SessionFormView extends StatelessWidget {
                 ),
               ),
             if (state.locationType == LocationType.online)
-              FormField(
-                key: FormKey('link'),
+              FormField<String>(
+                key: const FormKey('link'),
                 label: const Text('Meeting Link / Platform'),
                 child: TextField(
-                  features: [InputFeature.clear()],
+                  features: const [InputFeature.clear()],
                   onChanged: (value) {
                     context.read<SessionFormBloc>().add(LocationUpdated(value));
                   },
