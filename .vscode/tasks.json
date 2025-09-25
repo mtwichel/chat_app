@@ -30,7 +30,7 @@
         "runOn": "folderOpen",
       },
       "options": {
-        "cwd": "${workspaceFolder}/app"
+        "cwd": "${workspaceFolder}"
       }
     }
   ]

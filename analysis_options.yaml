@@ -10,3 +10,7 @@ bloc:
   rules:
     avoid_public_bloc_methods: true
     prefer_bloc: true
+
+analyzer:
+  errors:
+    invalid_annotation_target: ignore

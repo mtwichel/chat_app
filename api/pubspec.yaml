@@ -2,7 +2,6 @@ name: api
 description: A new Dart Frog application
 version: 1.0.0+1
 publish_to: none
-resolution: workspace
 
 environment:
   sdk: ">=3.8.0 <4.0.0"

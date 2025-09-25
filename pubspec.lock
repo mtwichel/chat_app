@@ -73,14 +73,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.2"
-  broadcast_bloc:
-    dependency: transitive
-    description:
-      name: broadcast_bloc
-      sha256: "066dddaa60ca32c7ecbfd59c02c2849b09d1e1e40747368dcb58dc221fed1d77"
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.1.0-dev.2"
   build:
     dependency: transitive
     description:
@@ -233,30 +225,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.0.6"
-  dart_frog:
-    dependency: transitive
-    description:
-      name: dart_frog
-      sha256: "84b8f82413f622dfdcfba6982522f8752ece09b49fea9a35f8794a0b2bc357e4"
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.2.3"
-  dart_frog_lint:
-    dependency: transitive
-    description:
-      name: dart_frog_lint
-      sha256: e46cb2399f7127e24f3d0aba2844beb2fecfd8a88b69afda3adc5936da9274a9
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.1.1"
-  dart_frog_web_socket:
-    dependency: transitive
-    description:
-      name: dart_frog_web_socket
-      sha256: "3db3834b7fc700bc0c9d12a15f9fb728ceb4977528c50a14763f9475ffccd1b1"
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.0.2"
   dart_style:
     dependency: transitive
     description:
@@ -411,14 +379,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.13.2"
-  hotreloader:
-    dependency: transitive
-    description:
-      name: hotreloader
-      sha256: bc167a1163807b03bada490bfe2df25b0d744df359227880220a5cbd04e5734b
-      url: "https://pub.dev"
-    source: hosted
-    version: "4.3.0"
   http:
     dependency: transitive
     description:
@@ -427,14 +387,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.5.0"
-  http_methods:
-    dependency: transitive
-    description:
-      name: http_methods
-      sha256: "6bccce8f1ec7b5d701e7921dca35e202d425b57e317ba1a37f2638590e29e566"
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.1.1"
   http_multi_server:
     dependency: transitive
     description:
@@ -810,14 +762,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.4.2"
-  shelf_hotreload:
-    dependency: transitive
-    description:
-      name: shelf_hotreload
-      sha256: d7099618b18d3c63ba5272491c1812c306629495129ef9996115f0417902f963
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.5.0"
   shelf_packages_handler:
     dependency: transitive
     description:

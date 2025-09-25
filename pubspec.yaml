@@ -41,6 +41,5 @@ flutter:
   uses-material-design: true
 
 workspace:
-  - api
   - packages/api_client
   - packages/sessions_repository
